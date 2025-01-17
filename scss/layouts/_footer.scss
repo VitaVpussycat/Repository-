@@ -1,0 +1,143 @@
+.footer {
+  position: relative;
+  padding-block: 32px;
+  background-image: url("/img/footer-image.png");
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &::before {
+    position: absolute;
+    width: 92px;
+    height: 196px;
+    background-repeat: no-repeat;
+    transform: rotate(2deg);
+    content: "";
+    background-image: url(/img/bread.png);
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 305px;
+      height: 120px;
+      content: "";
+      transform: none;
+      bottom: 0;
+      background-image: url(/img/bread-1.png);
+    }
+  }
+
+  &::after {
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+    background-image: url(/img/bread-3.png);
+    content: "";
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 370px;
+      height: 180px;
+      bottom: 0;
+      right: 0;
+      background-image: url(/img/bread-2.png);
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+
+  &__nav,
+  &__address {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      flex-basis: 50%;
+      gap: 20px;
+    }
+  }
+
+  &__logo {
+    flex-grow: 1;
+    text-align: center;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $bp-desktop) {
+      text-align: left;
+    }
+  }
+
+  &__mene {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+
+    @media screen and (min-width: $bp-desktop) {
+      text-align: left;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-desktop) {
+      justify-content: left;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__address-list,
+  &__address-info {
+    flex-grow: 1;
+    text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      text-align: left;
+    }
+  }
+
+  &__address-link {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-bottom: 18px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__address-link:hover {
+    color: var(--color-brand);
+  }
+
+  &__address-icon {
+    fill: var(--color-primary-light);
+  }
+
+  &__address-copyright {
+    font-size: 12px;
+    color: var(--color-light-green);
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 14px;
+    }
+  }
+}

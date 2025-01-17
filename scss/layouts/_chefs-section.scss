@@ -1,0 +1,51 @@
+.chefs-section {
+  &__title {
+    position: relative;
+    text-align: center;
+    margin: 0 auto 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin: 0 auto 80px;
+    }
+  }
+  &__title::before,
+  &__title::after {
+    display: none;
+    width: 352px;
+    border: 2px solid #cfcfbc;
+    content: "";
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__title::before {
+    position: absolute;
+    bottom: 24px;
+  }
+
+  &__title::after {
+    position: absolute;
+    right: 0;
+    bottom: 24px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 30px;
+    }
+  }
+
+  &__item {
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  }
+}
