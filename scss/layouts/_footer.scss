@@ -1,7 +1,7 @@
 .footer {
   position: relative;
   padding-block: 32px;
-  background-image: url("/img/footer-image.png");
+  background-image: url("../img/footer-image.png");
   background-color: var(--color-primary-dark);
   background-repeat: no-repeat;
   background-position: center;
@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
     transform: rotate(2deg);
     content: "";
-    background-image: url(/img/bread.png);
+    background-image: url(../img/bread.png);
 
     @media screen and (min-width: $bp-tablet) {
       width: 305px;
@@ -22,7 +22,7 @@
       content: "";
       transform: none;
       bottom: 0;
-      background-image: url(/img/bread-1.png);
+      background-image: url(../img/bread-1.png);
     }
   }
 
@@ -33,7 +33,7 @@
     background-repeat: no-repeat;
     bottom: 0;
     right: 0;
-    background-image: url(/img/bread-3.png);
+    background-image: url(../img/bread-3.png);
     content: "";
 
     @media screen and (min-width: $bp-tablet) {
@@ -41,7 +41,7 @@
       height: 180px;
       bottom: 0;
       right: 0;
-      background-image: url(/img/bread-2.png);
+      background-image: url(../img/bread-2.png);
     }
   }
 
